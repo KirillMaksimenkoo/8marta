@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 MARTA</title>
+    <style>
+        .mnogoser{
+            width: 100%;
+            height: 20px;
+            background-image: url(https://pngimg.com/uploads/heart/heart_PNG51337.png);
+            background-size:contain;
+        }
+        .nav-item{
+            width: 50%;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav-link:hover{
+            background-color: rgb(255, 148, 164);
+            border: 0px solid black;
+        }
+        .vid{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            left: 0%;
+            z-index: -100;
+        }
+        .glass{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            opacity: .7;
+            z-index: -50;
+        }
+        .osn1{
+            position: absolute;
+            width: 100%;
+            height: 260%;
+            top: 100%;
+        }
+        .image{
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 20%;
+            top: 12%;
+            transform: scale(0);
+            transition: all 0.8s ease 0s;
+            height: 80%;
+        }
+        .moments_image{
+            border: 1px solid black;
+        }
+        .image._active{
+            transform: scale(1);
+        }
+        .moments_item{
+            position: absolute;
+            width: 100%;
+            height: 15%;
+            top: 2%;
+            background-color: pink;
+            overflow: hidden;
+        }
+        .nad{
+            position: absolute;
+            right: 20%;
+            top: 15%;
+            width: 30%;
+            font-size: 20px;
+            color: aliceblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+
+            transform: translate(0px, 40%);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+        }
+        .nad._active{
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+        .fotoAnn{
+            position: absolute;
+            width: 30%;
+            margin-left: 20%;
+            top: 15%;
+            box-shadow: 7px 10px 0 rgba(32, 32, 32, 0.5);
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .nadprav{
+            position: absolute;
+            width: 20%;
+            padding: 10px;
+            margin-left: 60%;
+            top: 20%;
+            box-shadow: 7px 10px 0 rgba(32, 32, 32, 0.5);
+            font-size: 30px;
+            text-align: center;
+            background-image: url(5bbc86b72cf79166586e3b90.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+            color: white;
+            border-radius: 5px;
+            text-shadow: 
+             0 0 10px rgba(255, 75, 75, 2),
+             0 0 20px rgba(255, 75, 75, 2),
+             0 0 22px rgba(255, 75, 75, 2),
+             0 0 40px rgba(240, 197, 239, 0.8),
+             0 0 60px rgba(240, 197, 239, 0.8),
+             0 0 80px rgba(240, 197, 239, 0.8),
+             0 0 100px rgba(255, 255, 255, 0.5),
+             0 0 140px rgba(255, 255, 255, 0.5),
+             0 0 200px rgba(255, 255, 255, 0.5);
+        }
+        @media screen and (max-width: 1700px) {
+            .nadprav{
+                width: 25%;
+                font-size: 30px;
+            }
+            .image{
+                border: 1px solid black;
+            }
+            .nad{
+                font-size: 20px;
+                top: 12%;
+            }
+        }
+         @media screen and (max-width: 1400px) {
+            .nadprav{
+                width: 25%;
+                font-size: 25px;
+            }
+            .image{
+                border: 1px solid black;
+            }
+            .nad{
+                font-size: 15px;
+                top: 12%;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .nadprav{
+                width: 30%;
+                font-size: 25px;
+            }
+            .nad{
+                font-size: 10px;
+                top: 10%;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            .nadprav{
+                width: 35%;
+                font-size: 20px;
+            }
+            .nad{
+                font-size: 5px;
+                top: 8%;
+            }
+        }
+    </style>
+</head>
+<body style="width: 100%;">
+    <video class="vid" preload="auto" autoplay muted loop>
+        <source type="video/mp4" src="Valentines Background - 26008.mp4">
+    </video>
+    <div class="glass">
+
+    </div>
+    <img class="fotoAnn" src="Фотка Ани А.jpg" alt="">
+    <div class="nadprav">
+        Артамонова Анна Владимировна рразыскивается за кражу сердца Максименка Кирилла Андреевича. Так же была замечена в таких нарушениях как: превышение милости, красоты, ума и очаровательности. Срочно найти и заобнимать до смерти!!!
+    </div>
+    <div class="con">
+        <div class="mnogoser">
+    </div>
+    <ul class="nav nav-tabs" style="border-bottom: 0px solid black;">
+        <li class="nav-item"  style="background-color: rgb(250, 160, 174); ">
+          <a class="nav-link" href="index.html" style = "color:rgb(245, 79, 107);">Главная</a>
+        </li>
+        <li class="nav-item" style="background-color: rgb(251, 182, 192); ">
+          <a class="nav-link active" href="8MARTA(2).html" style="color:rgb(245, 79, 107);">Поздравление</a>
+        </li>
+      </ul>
+    </div>
+    <div class="osn1">
+        <div class="moments_item _anim-items">
+            
+                <img style="width:270px;left:30%" class="image _anim-items" src="246763953_2982415725353471_3080765227558615635_n.jpg" alt="">
+          
+            <div class="nad _anim-items">
+                У тебя сегодня праздник <hr>
+                Международный женский день<hr>
+                Решил тебя я так поздравить<hr>
+                Ведь мне не чуточки не лень<hr>
+            </div>
+            
+        </div>
+        <div style="margin-top: 28%;" class="moments_item _anim-items">
+            
+            <img style="width:270px;left:60%" style="left: 55%;" class="image _anim-items" src="247329830_553542662410343_930360458570212808_n.jpg" alt="">
+      
+        <div style="left: 20%;" class="nad _anim-items">
+            Ты заслужила поздравлений<hr>
+            Ведь красивее тебя нет<hr>
+            Кто тут прекрасней и белее?<hr>
+            Конечно АНЯ, спору нет<hr>
+        </div>
+        
+    </div>
+    <div style="margin-top: 56%;" class="moments_item _anim-items">
+            
+        <img style="width:270px;left:30%" class="image _anim-items" src="219077742_4449442465100567_2329218946400940987_n.jpg" alt="">
+  
+    <div class="nad _anim-items">
+        И хоть мы видимся не часто<hr>
+        Но жизнь по прежнему прекрасна<hr>
+        Я ж как бы тут с тобой встречаюсь<hr>
+        И каждый день от счастья улыбаюсь)<hr>
+    </div>
+    
+</div>
+<div style="margin-top: 84%;" class="moments_item _anim-items">
+            
+    <img style="width:270px;left:60%" style="left: 55%;" class="image _anim-items" src="240394913_220873073184523_2711416320844038409_n.jpg" alt="">
+
+<div style="left: 20%;" class="nad _anim-items">
+    Как можешь быть настолько идеальной?<hr>
+    В чем тут подвох? Быть может это нереально?<hr>
+    Всё тут не наяву а это сладкий сон<hr>
+    И если так, всю жизнь свою прожил бы в нем<hr>
+</div>
+
+</div>
+<div style="margin-bottom: 5%; margin-top: 112%;" class="moments_item _anim-items">
+            
+    <img style="width:270px;left:30%" class="image _anim-items" src="244537599_544001150033536_7176777761790264518_n.jpg" alt="">
+
+<div class="nad _anim-items">
+    И всё же, я хочу тебя поздравить <hr>
+    Ты моё солнце, ты мой сладкий пряник)<hr>
+    И может ты не любишь всю эту милоту<hr>
+    Но, сладкий пряник, я тебя люблю)<hr>
+</div>
+
+</div>
+    </div>
+    
+<script>
+    const animItems = document.querySelectorAll('._anim-items');
+     
+    if(animItems.length > 0){
+        window.addEventListener('scroll',animOnScroll)
+        function animOnScroll(params){
+         for (let index = 0; index < animItems.length; index++){
+             const animItem = animItems[index];
+             const animItemHeight = animItem.offsetHeight;
+             const animItemOffset = offset(animItem).top;
+             const animStart = 4;
+
+             let animItemPoint = window.innerHeight - animItemHeight / animStart;
+             if (animItemHeight > window.innerHeight){
+                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
+             }
+
+             if ((pageYOffset > animItemOffset - animItemPoint)&& pageYOffset < (animItemOffset + animItemHeight)){
+                 animItem.classList.add('_active');
+             } else{
+                 if (!animItem.classList.contains('_anim-no-hide')){
+                     animItem.classList.remove('_active');
+                 }
+             }
+         }   
+        }
+        function offset(el){
+            const rect = el.getBoundingClientRect(),
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+        }
+
+        setTimeout(() => {
+            animOnScroll();
+        },300);
+    }
+
+</script>
+</body>
+</html>
